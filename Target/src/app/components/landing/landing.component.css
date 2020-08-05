@@ -1,0 +1,43 @@
+body{
+    background-color: #cc0000;
+}
+
+.logo-container{
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+}
+
+.logo{
+width:45%;
+height: 45%;
+transition: 300ms;
+}
+
+.logo:hover{
+width:55%;
+height: 55%;
+}
+
+.container{
+text-align: center;
+width: 100%;
+height: 100%;
+background-color: #cc0000;
+}
+h3{
+color:white;
+font-size: larger;
+}
+
+:host{
+    /*background: #4285f4;*/
+    color:#fff;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100  
+  }

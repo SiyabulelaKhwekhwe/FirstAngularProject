@@ -1,0 +1,60 @@
+<div class="container">
+    
+    <div class="outer-container">
+        <div class="inner-container">
+            <form>
+                <h1>Registration form</h1>
+
+                <div style="text-align: center">
+                    <h1>{{message}}</h1>
+                </div>
+                <fieldset>
+                    
+                    <!--<legend class="text-center"><h3>Valid information is required to get registered.</h3> <span class="req"><small>required *</small></span></legend>-->
+
+                    <!--<div class="form-group">
+                        <input  type="number" [(ngModel)]="user.userID" name="id" id="id" class="form-control phone" maxlength="28" placeholder="Enter your id..." required/> 
+                    </div>-->
+
+                    <div class="form-group">
+                        <input  type="number" [(ngModel)]="user.userID" name="id" id="id" class="formfield" maxlength="28" placeholder="Enter your id..." required/> 
+                    </div>
+                    
+                 <div class="form-group">
+                        <input  type="text" [(ngModel)]="user.name" name="name" id="name" class="formfield" maxlength="28" placeholder="Enter your fullname..."  required/>
+                    </div>
+
+                    <div class="form-group">
+                        <input  type="text" [(ngModel)]="user.surname" name="surname" id="surname" class="formfield" maxlength="28" placeholder="Enter your surname..." required/>
+                    </div>
+
+                    <div class="form-group">
+                        <input  type="email" [(ngModel)]="user.username" name="username" id="username" class="formfield" maxlength="28" placeholder="Enter your username..."required />
+                    </div>
+
+                    <div class="form-group">
+                        <input  type="text" [(ngModel)]="user.password" name="password" id="password" class="formfield" maxlength="28" placeholder="Enter your password..." required/>
+                    </div>
+
+                    <div class="form-group">
+                        <input  type="number" [(ngModel)]="user.phoneNumber" name="phoneNumber" id="phoneNumber" class="formfield" maxlength="28" placeholder="Enter your phoneNumber..." required />
+                    </div>
+                    
+                    <div class="form-group">
+                        <input class="btn" type="submit" name="submit_reg" value="Register" (click)="registerNow() ">
+                    </div> 
+
+                    
+             <!--       -->
+                </fieldset>
+
+                <h4 >Already have an account?</h4>
+
+                    <div class="form-group">
+                        <a class="btn" style="color:white; width:200px;text-decoration: none;padding-left:170px;padding-right:170px;" routerLink="/login" routerLinkActive="active">login</a>
+                    </div> 
+            </form><!-- ends register form -->
+            <!-- second for to fiter user-->
+        </div><!-- ends col-6 -->
+    </div>
+</div>
